@@ -110,7 +110,6 @@ $(function() {
 
   function executeCommands(e) {
     var content = $('#commands').val();
-    console.log("execute "+content);
     content = content.toUpperCase().replace(/[^UDRL]/g, "");
     $('#commands').val(content);
     var path = [start];
