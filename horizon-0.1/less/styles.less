@@ -1,0 +1,149 @@
+html,body {
+    background: #606060;
+    width: 100%;
+}
+
+.content {
+    width: 1000px;
+    height: 625px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -312px;
+    margin-left: -500px;
+}
+
+.horizon {
+    float:left;
+
+    .hexagon {
+        stroke: #000;
+        stroke-width: .5px;
+
+        &:hover, &:hover{
+            stroke: white;
+            stroke-width: 2px;
+        }
+    }
+
+    .ground .hexagon {
+    	fill: #b89470;
+    }
+
+    .friends .hexagon {
+    	fill: #80cc80;
+    }
+
+    .foes .hexagon {
+    	fill: #ff8566;
+    }
+
+    .friendIcons .icon {
+        fill: white;
+    }
+}
+
+.guild {
+    .player {
+        height: 65px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        background: #80cc80;
+    }
+}
+
+.foes {
+    .player {
+        height: 40px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        background: #ff8566;
+    }
+
+    .stats {
+        margin-top: 8px;
+    }
+
+    .name {
+        margin: 0px;
+    	text-align: center;
+    	color: darkred;
+    	font-size: 1.5em;
+    }
+}
+
+
+.guild,.foes {
+    width: 335px;
+    padding: 6px;
+    margin: 10px;
+
+    float: right;
+
+    background: #e0e0e0;
+    border: solid 1px #808080;
+    border-radius: 8px;
+
+    .player {
+        width: 320px;
+        margin: 2px;
+        margin-right: 6px;
+        margin-left: 6px;
+
+        clear: both;
+
+        background: white;
+        border: solid 1px #808080;
+
+        &:hover {
+            background: lightblue;
+        }
+
+        p {
+            margin: 5px;
+            text-align: center;
+        }
+    }
+
+    .logo {
+        width: 100px;
+        margin-left: 120px;
+    }
+
+    .icon {
+        margin: 10px;
+
+        float:left;
+
+        border: solid 1px black;
+    }
+
+    .stats {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .stat {
+        width: 230px;
+        height: 8px;
+        margin: 2px;
+
+        border: solid 1px black;
+
+        &.life {
+            background: darkgreen;
+        }
+
+        &.action {
+            background: darkblue;
+        }
+    }
+}
+
